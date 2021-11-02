@@ -416,7 +416,7 @@ transition: all 0.3s linear;
     .carousel-inner img{
       height: 660px;
     }
-    .carousel-caption  {
+    .carousel-caption {
         border-color: black;
         border-radius: 20px;
     }
