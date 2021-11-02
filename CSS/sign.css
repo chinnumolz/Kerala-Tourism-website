@@ -8,6 +8,9 @@
     background-size: cover;
      height:50px;  
 } 
+html{
+    scroll-padding: 100px;
+}
 /* .bg-img{
     background: url(/pictures/back4.jpg);
     height: 100vh;
