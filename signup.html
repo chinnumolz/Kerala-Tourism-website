@@ -70,30 +70,32 @@
 
       <div class="signup">
         <h2>Sign up Here</h2>
-        <form action="login.html">
+        <form action="login.html" onsubmit="return validate()">
           <!--<div class="fields">
             <span class="	fas fa-user-alt"></span>-->
-             <input type="text" placeholder="First Name" required >
+             <input type="text" placeholder="First Name" required  id="firstname">
+             
         <!--</div>-->
         <!--<div class="fields"></div>
           <span class="	fas fa-user-plus"></span>-->
-              <input type="text" placeholder="Last Name" required>
+              <input type="text" placeholder="Last Name" required id="lastname">
         <!--</div> -->
         <!--<div class="fields">
             <span class="	fas fa-mobile-alt"></span>-->
-               <input type="text" placeholder="Phone Number" required>
+               <input type="text" placeholder="Phone Number" required id="phnumber">
         <!--</div>-->
         <!--<div class="fields"> 
           <span class="	fas fa-envelope-square"></span>-->
-          <input type="text" placeholder="Email" required>
+          <input type="text" placeholder="Email" required id="email">
+          <label for="error" id="error"></label>
         <!--</div> -->
         <!--<div class="fields"> 
           <span class="		fas fa-key"></span>-->
-          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Password" required id="pwd">
         <!--</div>-->
         <!--<div class="fields"> 
           <span class="		fas fa-key"></span>-->
-          <input type="password" placeholder="Confirmation Password" required>
+          <input type="password" placeholder="Confirmation Password" required id="cmpwd">
         <!--</div>-->
 
           <div class="field " >
@@ -112,7 +114,7 @@
         </form>
 
       </div>
-
+<script src="JS/signup.js"></script>
 
       <!--sigup form end-->
 
