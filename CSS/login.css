@@ -129,7 +129,7 @@ html{
         font-family: 'poppins',sans-serif;
 
     }
-    .show{
+    /* .show{
         position:absolute;
         right: 13px;
         font-size: 13px;
@@ -139,7 +139,7 @@ html{
         display: none;
         font-family: 'Montserrat',sans-serif;
 
-    }
+    } */
     .password:valid ~ .show{
         display:block;
     }
@@ -232,8 +232,17 @@ html{
     .signup a:hover{
         text-decoration: underline;
     }
-
-
+   /* span{
+       display: block;
+       margin-left: 20px;
+       color: red;
+       font-style: italic;
+   }
+ */
+ label{
+     font-size: 18px;
+     text-align: left;
+ }
 
 
 
