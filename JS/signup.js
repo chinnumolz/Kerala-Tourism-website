@@ -2,9 +2,9 @@
     let pwd = document.getElementById("pwd");
     let error = document.getElementById("error");
 
-    let firstname= document.getElementById("firstname").value;
+    // let username= document.getElementById("username");
     // let error2 = document.getElementById("error2");
-    let lastname = document.getElementById("lastname").value;
+    // let lastname = document.getElementById("lastname").value;
     // let error3 = document.getElementById("error3");
     let phnumber= document.getElementById("phnumber");
     let error1 = document.getElementById("error1");
@@ -12,7 +12,6 @@
      let error4 = document.getElementById("error4");
 
      function validate(){
-     
      
     // ##### phone number validation#######
        let phoneregex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
