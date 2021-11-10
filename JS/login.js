@@ -22,7 +22,7 @@
         return true;
       }
       else{
-        error1.innerHTML= "Please enter the password that contain minimum 8 characters,atleast uppercase  and lowercase";
+        error1.innerHTML= "Minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number";
         error1.style.color= "red";
         return false;
     }
