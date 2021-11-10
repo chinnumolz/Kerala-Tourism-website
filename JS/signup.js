@@ -1,49 +1,19 @@
     let email = document.getElementById("email");
     let pwd = document.getElementById("pwd");
     let error = document.getElementById("error");
-    // let firstname= document.getElementById("firstname").value;
-    // let lastname = document.getElementById("lastname").value;
-    // let phnumber= document.getElementById("phnumber").value;
-    // let cmpwd = document.getElementById("cmpwd").value;
+
+    let firstname= document.getElementById("firstname").value;
+    let error2 = document.getElementById("error2");
+    let lastname = document.getElementById("lastname").value;
+    let error3 = document.getElementById("error3");
+    let phnumber= document.getElementById("phnumber").value;
+    let error1 = document.getElementById("error1");
+    let cmpwd = document.getElementById("cmpwd").value;
+    let error4 = document.getElementById("error4");
 
      function validate(){
-  //   // ######## firstname validation ##########
-  //       if((firstname.length<=2)||(user.length>15)){
-  //         document.getElementById('fname').innerHTML="firstname length must be between 2 and 15";
-  //         return false;
+      //  ###### email validation #######
 
-  //       }
-  //       if(!isNaN(firstname)){
-  //         document.getElementById('fname').innerHTML="Only characters are allowed";
-  //         return false;
-  //       }
-  //    //########## lastname validation ########
-  //    if((lastname.length<=2)||(user.length>15)){
-  //     document.getElementById('lname').innerHTML="lastname length must be between 2 and 15";
-  //     return false;
-
-  //   }
-  //   if(!isNaN(lastname)){
-  //     document.getElementById('lname').innerHTML="Only characters are allowed";
-  //     return false;
-  //   }
-  //  //######### phone number validation ########
-  //  if(isNaN(phnumber)){
-  //    document.getElementById('phonenumber').innerHTML="user must write digits only not characters";
-  //    return false;
-  //  }
-  //  if(phnumber!=10)
-  //  {
-  //    document.getElementById('phonenumber').innerHTML="mobile number must write 10 digits only";
-  //    return false;
-
-  //  }
-
-
-
-
-      // ############ email validation ########
-     
       let   regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
     
     if(regexp.test(email.value)){
@@ -60,6 +30,25 @@
         error.style.color ="red";
         return false;
     }
+    
+//#####first name validation#####
+// #### last name validation###
+// #### phone number validation####
+if(isNaN(phnumber)){
+  error1.innerHTML ="user must write digits only";
+        error.style.color ="red";
+        return false;
+
+}
+
+    
+
+     //######## comfirmation password ############
+  // if(pwd!=cmpwd){
+  //   document.getElementById('comfirmation').innerHTML="passwords are not matching";
+  //   return false;
+  // }
+
 }
 //########## password validation #######
 // Code By Webdevtrick ( https://webdevtrick.com )
@@ -329,8 +318,4 @@ passwVisibilityBtn.addEventListener('click', e => {
   passwVisibilitySwitcher(DOM.passwInput, toggler);
  
 }); 
-  //######## comfirmation password ############
-  if(pwd!=cmpwd){
-    document.getElementById('comfirmation').innerHTML="passwords are not matching";
-    return false;
-  }
+ 

@@ -74,27 +74,28 @@
           <!--<div class="fields">
             <span class="	fas fa-user-alt"></span>-->
              <input type="text" placeholder="First Name" required  id="firstname">
-             <br>
-             <span id="fname" class="text-danger font-weight-bold"></span>
+             <label for="error" id="error2"></label>
+    
+             <!-- <span id="fname" class="text-danger font-weight-bold"></span> -->
              
         <!--</div>-->
         <!--<div class="fields"></div>
           <span class="	fas fa-user-plus"></span>-->
               <input type="text" placeholder="Last Name" required id="lastname">
-             <br>
-              <span id="lname" class="text-danger font-weight-bold"></span>
+              <label for="error" id="error3"></label>
+             
+              <!-- <span id="lname" class="text-danger font-weight-bold"></span> -->
         <!--</div> -->
         <!--<div class="fields">
             <span class="	fas fa-mobile-alt"></span>-->
-               <input type="text" placeholder="Phone Number(xxx-xxx-xxxx)" required id="phnumber" pattern="^\d{3}-\d{3}-\d{4}$">
-               <br>
-               <span id="phonenumber" class="text-danger font-weight-bold"></span>
+               <input type="text" placeholder="Phone Number(xxx-xxx-xxxx/xxx.xxx.xxxx/xxx xxx xxxx)" required id="phnumber" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$">
+               <label for="error" id="error1"></label>
+               <!-- <span id="phonenumber" class="text-danger font-weight-bold"></span> -->
 
         <!--</div>-->
         <!--<div class="fields"> 
           <span class="	fas fa-envelope-square"></span>-->
           <input type="text" placeholder="Email" required id="email">
-          <br>
           <label for="error" id="error"></label>
         <!--</div> -->
         <!--<div class="fields"> 
@@ -109,8 +110,9 @@
         <!--<div class="fields"> 
           <span class="		fas fa-key"></span>-->
           <input type="password" placeholder="Confirmation Password" required id="cmpwd">
-          <br>
-          <span id="comfirmation" class="text-danger font-weight-bold"></span>
+          <label for="error" id="error4"></label>
+        
+          <!-- <span id="comfirmation" class="text-danger font-weight-bold"></span> -->
         <!--</div>-->
 
           <div class="field " >
@@ -130,8 +132,8 @@
 
       </div>
 <script src="JS/signup.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script> 
 
       <!--sigup form end-->
 
