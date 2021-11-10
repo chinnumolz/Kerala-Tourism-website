@@ -20,23 +20,23 @@
         return false;
     }
     
-    if(email.value.trim()==""){
-        return false;
+    // if(email.value.trim()==""){
+    //     return false;
 
-    }
-    else if(pwd.value.trim()==""){
-        return false;
+    // }
+    // else if(pwd.value.trim()==""){
+    //     return false;
 
-    }
-    else if(pwd.value.length<=4){
-        alert("password is too short");
-        return false;
+    // }
+    // else if(pwd.value.length<=4){
+    //     alert("password is too short");
+    //     return false;
 
-    }
-    else {
-        return true;
+    // }
+    // else {
+    //     return true;
         
-    }
+    // }
     
 }
 // Code By Webdevtrick ( https://webdevtrick.com )

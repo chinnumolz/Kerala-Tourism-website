@@ -92,7 +92,7 @@ html{
     border-radius: 30px;
     text-align: center;
     padding: 60px 32px;
-    margin-top: 140px;
+    margin-top: 200px;
     background:rgba(0, 0, 0, 0.75);
     box-shadow: -1px 4px 28px opx rgba(8, 7, 7, 0.75);
 }
@@ -189,7 +189,7 @@ input[type=submit]:hover{
 /* signup form end */
 
     /* Main Footer */
-footer .main-footer{  padding: 20px 0;  background: #252525; margin-top:70%;}
+footer .main-footer{  padding: 20px 0;  background: #252525; margin-top:80%;}
 footer ul{  padding-left: 0;  list-style: none;}
 
 /* Copy Right Footer */

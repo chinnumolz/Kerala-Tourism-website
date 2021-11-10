@@ -3,21 +3,43 @@
     let error = document.getElementById("error");
 
     let firstname= document.getElementById("firstname").value;
-    let error2 = document.getElementById("error2");
+    // let error2 = document.getElementById("error2");
     let lastname = document.getElementById("lastname").value;
-    let error3 = document.getElementById("error3");
-    let phnumber= document.getElementById("phnumber").value;
+    // let error3 = document.getElementById("error3");
+    let phnumber= document.getElementById("phnumber");
     let error1 = document.getElementById("error1");
-    let cmpwd = document.getElementById("cmpwd").value;
-    let error4 = document.getElementById("error4");
+    let cmpwd = document.getElementById("cmpwd");
+     let error4 = document.getElementById("error4");
 
      function validate(){
-      //  ###### email validation #######
+     
+     
+    // ##### phone number validation#######
+       let phoneregex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(phoneregex.test(phnumber.value)==false){
+          error1.innerHTML="invalid Phone number.format:xxx-xxx-xxxx,xxx.xxx.xxxx,xxx xxx xxxx";
+          error1.style.color="red";
+          return false;
+        }
+      else if(phoneregex.test(phnumber.value)==true){
+        error1.innerHTML="";
+        error1.style.color="green";
+      }
+      // ####### confirmation password ######
+      if (pwd.value!==cmpwd.value){
+        error4.innerHTML="Passwords do not match"
+        error4.style.color="red";
+        return false;
+     }
+     else{
+       error4.innerHTML="";
+     }
+ //  ###### email validation #######
 
       let   regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
     
     if(regexp.test(email.value)){
-        error.innerHTML = "Valid";
+        error.innerHTML = "";
         error.style.color ="green";
         error.style.textAlign = "left";
         return true;
@@ -31,24 +53,7 @@
         return false;
     }
     
-//#####first name validation#####
-// #### last name validation###
-// #### phone number validation####
-if(isNaN(phnumber)){
-  error1.innerHTML ="user must write digits only";
-        error.style.color ="red";
-        return false;
-
-}
-
-    
-
-     //######## comfirmation password ############
-  // if(pwd!=cmpwd){
-  //   document.getElementById('comfirmation').innerHTML="passwords are not matching";
-  //   return false;
-  // }
-
+ 
 }
 //########## password validation #######
 // Code By Webdevtrick ( https://webdevtrick.com )
