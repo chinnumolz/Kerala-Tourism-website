@@ -70,10 +70,10 @@
 
       <div class="signup">
         <h2>Sign up Here</h2>
-        <form  class="form-strength" action="login.html" onsubmit="return validate() ">
+        <form  class="form-strength" action="login.html" onsubmit="return !! (validate() & check()) ; ">
           <!--<div class="fields">
             <span class="	fas fa-user-alt"></span>-->
-             <input type="text" placeholder="Username" required  id="username">
+             <input type="text" placeholder="Username" required  id="username" oninput="return validate();">
              <label for="error" id="error2"></label>
     
 
@@ -82,16 +82,16 @@
              
               
             <!-- <span class="	fas fa-mobile-alt"></span>--> 
-               <input type="text" placeholder="Phone Number" required id="phnumber" >
+               <input type="text" placeholder="Phone Number" required id="phnumber" oninput="return validate() ;">
                <label for="error" id="error1"></label>
                
           <!-- <span class="	fas fa-envelope-square"></span>--> 
-          <input type="text" placeholder="Email" required id="email">
+          <input type="text" placeholder="Email" required id="email" oninput="return validate() ;">
           <label for="error" id="error"></label>
         <!--</div> -->
         <!--<div class="fields"> 
           <span class="		fas fa-key"></span>-->
-          <input type="password" class="password" placeholder="Password" required id="pwd">
+          <input type="password" class="password" placeholder="Password" required id="pwd" oninput= "return check() ;">
 
           <small class="password-strength__error text-danger js-hidden">This symbol is not allowed!</small><small  style="color: black;"class="form-text text-muted mt-2" id="passwordHelp"><b>Add minimum 8 charachters, lowercase letters, uppercase letters, numbers and symbols to make the password really strong!</b></small>
                     <div class="password-strength__bar-block progress mb-4">
@@ -100,7 +100,7 @@
         <!--</div>-->
         <!--<div class="fields"> 
           <span class="		fas fa-key"></span>-->
-          <input type="password" placeholder="Confirmation Password" required id="cmpwd">
+          <input type="password" placeholder="Confirmation Password" required id="cmpwd" oninput="return validate() ;">
           <label for="error" id="error4"></label>
         
           <!-- <span id="comfirmation" class="text-danger font-weight-bold"></span> -->

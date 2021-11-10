@@ -16,7 +16,7 @@
     // ##### phone number validation#######
        let phoneregex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         if(phoneregex.test(phnumber.value)==false){
-          error1.innerHTML="invalid Phone number.format:xxx-xxx-xxxx,xxx.xxx.xxxx,xxx xxx xxxx";
+          error1.innerHTML="valid Phone number format:xxx-xxx-xxxx,xxx.xxx.xxxx,xxx xxx xxxx";
           error1.style.color="red";
           return false;
         }
@@ -24,7 +24,7 @@
         error1.innerHTML="";
         error1.style.color="green";
       }
-      // ####### confirmation password ######
+    //   // ####### confirmation password ######
       if (pwd.value!==cmpwd.value){
         error4.innerHTML="Passwords do not match"
         error4.style.color="red";
@@ -45,14 +45,27 @@
 
 
     }
-
-    else {
-        error.innerHTML ="invalid";
+  else {
+        error.innerHTML =" please enter valid email id";
         error.style.color ="red";
         return false;
     }
     
- 
+    }
+function check(){
+  
+  let passregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+      if (passregex.test(pwd.value)){
+        error.innerHTML = "";
+        return true;
+      }
+      else{
+        error.innerHTML= "";
+        error.style.color= "red";
+        return false;
+    }
+  
+     
 }
 //########## password validation #######
 // Code By Webdevtrick ( https://webdevtrick.com )
